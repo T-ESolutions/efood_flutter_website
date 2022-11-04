@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "913952057729",
+    "project_id": "efood-2db7b",
+    "storage_bucket": "efood-2db7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913952057729:android:4e2ce931b55b3eee576080",
+        "android_client_info": {
+          "package_name": "com.tesolutionspro.efood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913952057729-8o6pd8e87rtam6c740947bvvsikv2s22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArKcZm80QYp5Tg5GXByQOdolS4mRVV1cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913952057729-8o6pd8e87rtam6c740947bvvsikv2s22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
