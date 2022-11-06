@@ -156,17 +156,17 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                 ) : SizedBox.shrink(),
                 SizedBox(height: 13),
 
-                IgnorePointer(
-                  ignoring: searchProvider.searchProductList == null,
-                  child: FilterButtonWidget(
-                    type: _type,
-                    items: Provider.of<ProductProvider>(context).productTypeList,
-                    onSelected: (selected) {
-                      _type = selected;
-                      Provider.of<SearchProvider>(context,listen: false).searchProduct(_searchController.text, context, type: _type, isUpdate: true);
-                    },
-                  ),
-                ),
+                // IgnorePointer(
+                //   ignoring: searchProvider.searchProductList == null,
+                //   child: FilterButtonWidget(
+                //     type: _type,
+                //     items: Provider.of<ProductProvider>(context).productTypeList,
+                //     onSelected: (selected) {
+                //       _type = selected;
+                //       Provider.of<SearchProvider>(context,listen: false).searchProduct(_searchController.text, context, type: _type, isUpdate: true);
+                //     },
+                //   ),
+                // ),
 
                 Expanded(
                   child: searchProvider.searchProductList != null ? searchProvider.searchProductList.length > 0 ? Scrollbar(

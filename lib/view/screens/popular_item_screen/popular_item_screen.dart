@@ -51,17 +51,17 @@ class _PopularItemScreenState extends State<PopularItemScreen> {
           builder: (context, productProvider, child) {
           return Column(
             children: [
-              IgnorePointer(
-                ignoring: productProvider.popularProductList == null,
-                child: FilterButtonWidget(
-                  type: _type,
-                  items: Provider.of<ProductProvider>(context).productTypeList,
-                  onSelected: (selected) {
-                    _type = selected;
-                    productProvider.getPopularProductList(context, true,'1', type: _type, isUpdate: true);
-                  },
-                ),
-              ),
+              // IgnorePointer(
+              //   ignoring: productProvider.popularProductList == null,
+              //   child: FilterButtonWidget(
+              //     type: _type,
+              //     items: Provider.of<ProductProvider>(context).productTypeList,
+              //     onSelected: (selected) {
+              //       _type = selected;
+              //       productProvider.getPopularProductList(context, true,'1', type: _type, isUpdate: true);
+              //     },
+              //   ),
+              // ),
               Expanded(
                 child: productProvider.popularProductList != null ?
                 productProvider.popularProductList.length > 0 ? RefreshIndicator(

@@ -508,7 +508,7 @@ class _CartBottomSheetState extends State<CartBottomSheet> {
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               RatingBar(rating: widget.product.rating.length > 0 ? double.parse(widget.product.rating[0].average) : 0.0, size: 15),
-              widget.product.productType != null ? VegTagView(product: widget.product) : SizedBox(),
+              // widget.product.productType != null ? VegTagView(product: widget.product) : SizedBox(),
             ],
           ),
           SizedBox(height: 20),
@@ -583,40 +583,40 @@ class _CartBottomSheetState extends State<CartBottomSheet> {
   }
 }
 
-class VegTagView extends StatelessWidget {
-  final Product product;
-  const VegTagView({Key key, this.product}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Theme.of(context).backgroundColor,
-        borderRadius: BorderRadius.circular(5),
-        boxShadow: [BoxShadow(blurRadius: 5, color: Theme.of(context).backgroundColor.withOpacity(0.05))],
-      ),
-
-      child: SizedBox(height:  30,
-        child: Row(
-          children: [
-            Padding(
-              padding:  EdgeInsets.all(Dimensions.PADDING_SIZE_EXTRA_SMALL),
-              child: Image.asset(
-                Images.getImageUrl('${product.productType}',
-                ), fit: BoxFit.fitHeight,
-              ),
-            ),
-            SizedBox(width: Dimensions.PADDING_SIZE_SMALL),
-
-            Text(
-              getTranslated('${product.productType}', context),
-              style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL),
-            ),
-            SizedBox(width: Dimensions.PADDING_SIZE_EXTRA_SMALL),
-          ],
-        ),
-      ),
-    );
-  }
-}
+// class VegTagView extends StatelessWidget {
+//   final Product product;
+//   const VegTagView({Key key, this.product}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       decoration: BoxDecoration(
+//         color: Theme.of(context).backgroundColor,
+//         borderRadius: BorderRadius.circular(5),
+//         boxShadow: [BoxShadow(blurRadius: 5, color: Theme.of(context).backgroundColor.withOpacity(0.05))],
+//       ),
+//
+//       child: SizedBox(height:  30,
+//         child: Row(
+//           children: [
+//             Padding(
+//               padding:  EdgeInsets.all(Dimensions.PADDING_SIZE_EXTRA_SMALL),
+//               child: Image.asset(
+//                 Images.getImageUrl('${product.productType}',
+//                 ), fit: BoxFit.fitHeight,
+//               ),
+//             ),
+//             SizedBox(width: Dimensions.PADDING_SIZE_SMALL),
+//
+//             Text(
+//               getTranslated('${product.productType}', context),
+//               style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL),
+//             ),
+//             SizedBox(width: Dimensions.PADDING_SIZE_EXTRA_SMALL),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
 
