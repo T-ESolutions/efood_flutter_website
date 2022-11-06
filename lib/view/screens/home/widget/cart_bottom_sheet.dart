@@ -373,6 +373,9 @@ class _CartBottomSheetState extends State<CartBottomSheet> {
   }
 
   Widget _description(BuildContext context) {
+    if(widget.product.description == null || widget.product.description.isEmpty) {
+      return SizedBox();
+    }
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(getTranslated('description', context), style: rubikMedium.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
       SizedBox(height: Dimensions.PADDING_SIZE_EXTRA_SMALL),
