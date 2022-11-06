@@ -35,7 +35,7 @@ class ProductProvider extends ChangeNotifier {
   int popularOffset = 1;
   int _cartIndex = -1;
   bool _isReviewSubmitted = false;
-  List<String> _productTypeList = ['all', 'non_veg', 'veg'];
+  // List<String> _productTypeList = ['all', 'non_veg', 'veg'];
 
 
   List<Product> get popularProductList => _popularProductList;
@@ -50,7 +50,7 @@ class ProductProvider extends ChangeNotifier {
   bool get seeMoreButtonVisible => _seeMoreButtonVisible;
   int get cartIndex => _cartIndex;
   bool get isReviewSubmitted => _isReviewSubmitted;
-  List<String> get productTypeList => _productTypeList;
+  // List<String> get productTypeList => _productTypeList;
 
 
 

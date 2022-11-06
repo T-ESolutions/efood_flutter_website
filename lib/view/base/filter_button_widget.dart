@@ -23,8 +23,7 @@ class FilterButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool _ltr = Provider.of<LocalizationProvider>(context) .isLtr;
-    bool _isVegFilter = Provider.of<ProductProvider>(context).productTypeList == items;
-
+    bool _isVegFilter = false;
     return  Align(alignment: Alignment.center, child: Container(
       height: ResponsiveHelper.isMobile(context) ? 35 : 40,
       margin: EdgeInsets.symmetric(vertical: Dimensions.PADDING_SIZE_SMALL),
