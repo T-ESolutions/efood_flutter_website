@@ -4,7 +4,7 @@ import 'package:flutter_restaurant/utill/images.dart';
 class AppConstants {
   static const String APP_NAME = 'TES';
   static const double APP_VERSION = 9.0;
-  static const String BASE_URL =  'https://efood.tesolutionspro.com';
+  static const String BASE_URL =  'https://efood-deom.tesolutionspro.com';
   static const String CATEGORY_URI = '/api/v1/categories';
   static const String BANNER_URI = '/api/v1/banners';
   static const String LATEST_PRODUCT_URI = '/api/v1/products/latest';
