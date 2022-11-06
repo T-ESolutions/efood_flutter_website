@@ -2,7 +2,7 @@ import 'package:flutter_restaurant/data/model/response/language_model.dart';
 import 'package:flutter_restaurant/utill/images.dart';
 
 class AppConstants {
-  static const String APP_NAME = 'T app';
+  static const String APP_NAME = 'T pharmacy';
   static const double APP_VERSION = 9.0;
   static const String BASE_URL = 'https://efood.tesolutionspro.com';
   static const String CATEGORY_URI = '/api/v1/categories';

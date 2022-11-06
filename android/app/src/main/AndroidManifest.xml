@@ -22,7 +22,7 @@
     </queries>
 
     <application
-        android:label="T app"
+        android:label="T pharmacy"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">

@@ -28,7 +28,7 @@ class CategoryView extends StatelessWidget {
               children: [
                 Expanded(
                   child: SizedBox(
-                    height: 80,
+                    height: 90,
                     child: category.categoryList != null ? category.categoryList.length > 0 ? ListView.builder(
                       itemCount: category.categoryList.length,
                       padding: EdgeInsets.only(left: Dimensions.PADDING_SIZE_SMALL),

@@ -272,6 +272,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ):  SizedBox(),
 
                         ResponsiveHelper.isDesktop(context)? CategoryViewWeb() : CategoryView(),
+                        SizedBox(height: 5),
                         ResponsiveHelper.isDesktop(context)? SetMenuViewWeb() :  SetMenuView(),
 
                         ResponsiveHelper.isDesktop(context) ?  SizedBox(): BannerView(),
