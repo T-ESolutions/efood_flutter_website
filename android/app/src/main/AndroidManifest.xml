@@ -22,7 +22,7 @@
     </queries>
 
     <application
-        android:label="TES"
+        android:label="T app"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
