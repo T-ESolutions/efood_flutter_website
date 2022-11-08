@@ -12,6 +12,7 @@ import 'package:flutter_restaurant/utill/styles.dart';
 import 'package:flutter_restaurant/view/screens/menu/widget/sign_out_confirmation_dialog.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../utill/app_constants.dart';
 import '../../../base/custom_dialog.dart';
 
 class OptionsView extends StatelessWidget {
@@ -167,6 +168,9 @@ class OptionsView extends StatelessWidget {
                   leading: Image.asset(Images.login, width: 20, height: 20, color: Theme.of(context).textTheme.bodyText1.color),
                   title: Text(getTranslated(_isLoggedIn ? 'logout' : 'login', context), style: rubikMedium.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
                 ),
+
+                Center(child: ProdByWidget())
+             ,   SizedBox(height: 10,)
 
               ],
             ),

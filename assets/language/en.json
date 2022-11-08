@@ -7,6 +7,8 @@
   "addons": "Addons",
   "items": "Items",
   "item": "Item",
+  "prodby": "Developed By",
+  "prodby2": "TES",
   "add_to_cart": "Add to Cart",
   "checkout": "Checkout",
   "delivery_address": "Delivery Address",
