@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "913952057729",
-    "project_id": "efood-2db7b",
-    "storage_bucket": "efood-2db7b.appspot.com"
+    "project_number": "803164417313",
+    "project_id": "t-pharmacy",
+    "storage_bucket": "t-pharmacy.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:913952057729:android:4e2ce931b55b3eee576080",
+        "mobilesdk_app_id": "1:803164417313:android:95c06c5a6c9d45fc976260",
         "android_client_info": {
-          "package_name": "com.tesolutionspro.efood"
+          "package_name": "com.tesolutionspro.pharmacy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "913952057729-8o6pd8e87rtam6c740947bvvsikv2s22.apps.googleusercontent.com",
+          "client_id": "803164417313-7sdsvsn18m352ucr18lraepbp7juufe3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyArKcZm80QYp5Tg5GXByQOdolS4mRVV1cw"
+          "current_key": "AIzaSyDdT7ey67kViFoporuhApfMxhHK-YVIGXg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "913952057729-8o6pd8e87rtam6c740947bvvsikv2s22.apps.googleusercontent.com",
+              "client_id": "803164417313-7sdsvsn18m352ucr18lraepbp7juufe3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
