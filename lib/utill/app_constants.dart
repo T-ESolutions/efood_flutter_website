@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../localization/language_constrants.dart';
 import 'color_resources.dart';
+
 class AppConstants {
   static const String APP_NAME = 'T pharmacy';
   static const double APP_VERSION = 9.0;
@@ -110,6 +111,7 @@ class AppConstants {
     ),
   ];
 }
+
 class ProdByWidget extends StatelessWidget {
   const ProdByWidget({
     Key key,
@@ -117,25 +119,22 @@ class ProdByWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        RichText(
-            text: TextSpan(children: [
-              TextSpan(
-                  text: '${getTranslated('prodby', context)} ',
-                  style: rubikRegular.copyWith(
-                      color: ColorResources.getGreyColor(context), fontSize: 18)),
-              TextSpan(
-                  recognizer: new TapGestureRecognizer()
-                    ..onTap = () {
-                      launch("https://tesolutionspro.com/");
-                    },
-                  text: getTranslated('prodby2', context),
-                  style: rubikMedium.copyWith(
-                      color: ColorResources.APPBAR_HEADER_COL0R, fontSize: 20)),
-            ])),
+        Text('${getTranslated('prodby', context)} ',
+            style: rubikRegular.copyWith(
+                color: ColorResources.getGreyColor(context), fontSize: 18)),
+        InkWell(
+          onTap: () {
+            launch("https://tesolutionspro.com/");
+          },
+          child: Image.asset(
+            'assets/image/logo_tes.png',
+            height: 50,
+          ),
+        )
       ],
     );
   }
