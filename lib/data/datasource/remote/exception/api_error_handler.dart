@@ -49,7 +49,7 @@ class ApiErrorHandler {
               break;
           }
         } else {
-          errorDescription = "Unexpected error occured";
+          errorDescription = "Unexpected error occurred";
         }
       } on FormatException catch (e) {
         errorDescription = e.toString();

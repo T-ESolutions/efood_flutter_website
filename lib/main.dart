@@ -48,7 +48,7 @@ AndroidNotificationChannel channel;
 
 Future<void> main() async {
 
-  if(ResponsiveHelper.isMobilePhone()) {
+  if(true) {
     HttpOverrides.global = new MyHttpOverrides();
   }
   setPathUrlStrategy();
@@ -57,9 +57,13 @@ Future<void> main() async {
     await Firebase.initializeApp();
   } else {
     await Firebase.initializeApp(options: FirebaseOptions(
-      apiKey: 'AIzaSyAMLk1-dj8g0qCqU3DkxLKHbrT0VhK5EeQ',
-      appId: '1:410522356318:web:1f962a90aabeb82a3dc2cf',
-      messagingSenderId: '410522356318', projectId: 'e-food-9e6e3',
+        apiKey: "AIzaSyCRJ5oo4qItjzWwSloYeQqktwAkUXOVRdc",
+        authDomain: "t-pharmacy.firebaseapp.com",
+        projectId: "t-pharmacy",
+        storageBucket: "t-pharmacy.appspot.com",
+        messagingSenderId: "803164417313",
+        appId: "1:803164417313:web:e1e855f3fae5e968976260",
+        measurementId: "G-L39TC4BSWF"
     ));
   }
   await di.init();
@@ -130,7 +134,7 @@ class _MyAppState extends State<MyApp> {
     RouterHelper.setupRouter();
 
     if(kIsWeb) {
-      Provider.of<SplashProvider>(context, listen: false).initSharedData();
+       Provider.of<SplashProvider>(context, listen: false).initSharedData();
       Provider.of<CartProvider>(context, listen: false).getCartData();
       Provider.of<SplashProvider>(context, listen: false).getPolicyPage(context);
 
